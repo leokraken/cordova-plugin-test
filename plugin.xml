@@ -24,7 +24,7 @@
     </config-file>
 
     <source-file src="app/src/main/java/leo/example/menu" target-dir="src/com/example/plugin"/>
-    <source-file src="app/src/main/res" target-dir="res"/>
+    <resource-file src="app/src/main/res" />
   </platform>
 
 
