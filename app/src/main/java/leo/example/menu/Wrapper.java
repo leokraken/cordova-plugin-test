@@ -11,22 +11,28 @@ public class Wrapper extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
+        cordova.getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Context context = cordova.getActivity()
+                        .getApplicationContext();
+                Intent intent = new Intent(context, MainActivity.class);
+                cordova.getActivity().startActivity(intent);
+            }
+        });
 
-        if (action.equals("greet")) {
+        return true;
 
+        /*
             String name = data.getString(0);
             String message = "Hello, " + name;
             //callbackContext.success(message);
 
-            Context context=this.cordova.getActivity().getApplicationContext();
+            Context context= this.cordova.getActivity().getApplicationContext();
             Intent intent = new Intent(context, MainActivity.class);
             context.startActivity(intent);
-            return true;
+            return true;*/
 
-        } else {
 
-            return false;
-
-        }
     }
 }
