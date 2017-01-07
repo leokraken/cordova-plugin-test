@@ -23,11 +23,8 @@
       </feature>
     </config-file>
 
-    <source-file src="app/src/main/java/leo/example/menu/Wrapper.java" target-dir="src/com/example/plugin/"/>
-    <source-file src="app/src/main/java/leo/example/menu/MainActivity.java" target-dir="src/com/example/plugin/"/>
-    <source-file src="app/src/main/res/layout/activity_main.xml" target-dir="res/layout"/>
-    <source-file src="app/src/main/res/values/dimens.xml" target-dir="res/values"/>
-
+    <source-file src="app/src/main/java/leo/example/menu" target-dir="src/com/example/plugin"/>
+    <source-file src="app/src/main/res" target-dir="res"/>
   </platform>
 
 
