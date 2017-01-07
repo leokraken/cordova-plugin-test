@@ -16,7 +16,7 @@ public class Wrapper extends CordovaPlugin {
 
             String name = data.getString(0);
             String message = "Hello, " + name;
-            callbackContext.success(message);
+            //callbackContext.success(message);
 
             Context context=this.cordova.getActivity().getApplicationContext();
             Intent intent = new Intent(context, MainActivity.class);
