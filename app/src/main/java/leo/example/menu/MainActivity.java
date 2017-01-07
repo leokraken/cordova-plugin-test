@@ -12,6 +12,6 @@ public class MainActivity extends Activity {
         String package_name = getApplication().getPackageName();
         Resources resources = getApplication().getResources();
         setContentView(resources.getIdentifier("activity_main", "layout", package_name));
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
     }
 }
