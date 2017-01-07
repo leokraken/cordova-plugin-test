@@ -22,17 +22,5 @@ public class Wrapper extends CordovaPlugin {
         });
 
         return true;
-
-        /*
-            String name = data.getString(0);
-            String message = "Hello, " + name;
-            //callbackContext.success(message);
-
-            Context context= this.cordova.getActivity().getApplicationContext();
-            Intent intent = new Intent(context, MainActivity.class);
-            context.startActivity(intent);
-            return true;*/
-
-
     }
 }
