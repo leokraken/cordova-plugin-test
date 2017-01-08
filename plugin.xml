@@ -23,9 +23,9 @@
       </feature>
     </config-file>
 
-    <source-file src="app/src/main/java/leo/example/menu" target-dir="src/com/example/plugin"/>
-    <resource-file src="app/src/main/res/layout/activity_main.xml" target="res/layout"/>
-    <resource-file src="app/src/main/res/values/dimens.xml" target="res/values"/>
+    <source-file src="app/src/main/java/leo/example/menu" target-dir="src/com/example/plugin/"/>
+    <resource-file src="app/src/main/res/layout/activity_main.xml" target="res/layout/activity_main.xml"/>
+    <resource-file src="app/src/main/res/values/dimens.xml" target="res/values/dimens.xml"/>
 
   </platform>
 
